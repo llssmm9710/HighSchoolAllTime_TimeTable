@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <TableLayout
+        android:id="@+id/Time_Table"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -14,7 +15,6 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="150dp"
         android:background="@drawable/table_outside"
         android:stretchColumns="*"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,6 +32,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside_schema"
                 android:gravity="center"
+                android:layout_weight="1"
                 android:text=" "
                 android:textSize="25sp" />
 
@@ -86,10 +87,12 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
                 android:gravity="center"
-                android:text="1교시"
+                android:layout_weight="1"
+                android:text="1"
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/tv_result_m1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -98,6 +101,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_tu1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -106,6 +110,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_w1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -114,6 +119,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_t1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -122,6 +128,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_f1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -140,10 +147,12 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
                 android:gravity="center"
-                android:text="2교시"
+                android:layout_weight="1"
+                android:text="2"
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/tv_result_m2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -152,6 +161,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_tu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -160,6 +170,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_w2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -168,6 +179,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_t2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -176,6 +188,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_f2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -194,10 +207,12 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
                 android:gravity="center"
-                android:text="3교시"
+                android:layout_weight="1"
+                android:text="3"
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/tv_result_m3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -206,6 +221,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_tu3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -214,6 +230,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_w3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -222,6 +239,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_t3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -230,6 +248,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_f3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -248,10 +267,12 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
                 android:gravity="center"
-                android:text="4교시"
+                android:layout_weight="1"
+                android:text="4"
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/tv_result_m4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -260,6 +281,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_tu4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -268,6 +290,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_w4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -276,6 +299,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_t4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -284,6 +308,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_f4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -302,10 +327,12 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
                 android:gravity="center"
-                android:text="5교시"
+                android:layout_weight="1"
+                android:text="5"
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/tv_result_m5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -314,6 +341,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_tu5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -322,6 +350,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_w5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -330,6 +359,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_t5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -338,6 +368,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_f5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -356,10 +387,12 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
                 android:gravity="center"
-                android:text="6교시"
+                android:layout_weight="1"
+                android:text="6"
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/tv_result_m6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -368,6 +401,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_tu6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -376,6 +410,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_w6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -384,6 +419,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_t6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -392,6 +428,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_f6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -410,10 +447,12 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
                 android:gravity="center"
-                android:text="7교시"
+                android:layout_weight="1"
+                android:text="7"
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/tv_result_m7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -422,6 +461,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_tu7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -430,6 +470,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_w7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -438,6 +479,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_t7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -446,6 +488,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tv_result_f7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_inside"
@@ -461,6 +504,13 @@
         android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="추가" />
     </FrameLayout>
 
     <LinearLayout
