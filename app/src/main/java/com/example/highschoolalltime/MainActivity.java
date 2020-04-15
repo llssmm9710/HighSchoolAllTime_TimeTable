@@ -14,7 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class MainActivity extends AppCompatActivity {
 
     Button btn1, btn2, btn3, btn4, btn5, btn_add;
-    TextView tv_result;
+    TextView tv_result, tv_result2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         btn5 = (Button) findViewById(R.id.btn_5);
         btn_add = (Button) findViewById(R.id.btn_add);
         tv_result = (TextView) findViewById(R.id.tv_result_m1);
+        tv_result2 = (TextView) findViewById(R.id.tv_result_m2);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,7 +102,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         String subject = et.getText().toString();
                         String result = et2.getText().toString();
-
+                        tv_result.setText(result);
+                        tv_result2.setText(subject);
                         dialog.dismiss();
                     }
                 });
