@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
                 final EditText et = new EditText(MainActivity.this);
                 ad.setView(et);
+
                 ad.setMessage("수업 교시");
 
                 final EditText et2 = new EditText(MainActivity.this);
