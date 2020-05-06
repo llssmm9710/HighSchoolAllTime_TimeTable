@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".TimeTableActivity">
 
     <TableLayout
         android:id="@+id/Time_Table"
@@ -128,13 +128,13 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tv_result_f1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/table_inside"
-                android:gravity="center"
-                android:text=" "
-                android:textSize="15sp" />
+            android:id="@+id/tv_result_f1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_inside"
+            android:gravity="center"
+            android:text=" "
+            android:textSize="15sp" />
 
         </TableRow>
 
@@ -500,18 +500,37 @@
 
     </TableLayout>
 
-    <FrameLayout
-        android:id="@+id/frame"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
         <Button
             android:id="@+id/btn_add"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:text="추가" />
-    </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Spinner
+            android:id="@+id/sp_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:entries="@array/day"/>
+        <Spinner
+            android:id="@+id/sp_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:entries="@array/time"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -550,4 +569,6 @@
             android:layout_weight="1"
             android:text="My"/>
     </LinearLayout>
+
 </RelativeLayout>
+
