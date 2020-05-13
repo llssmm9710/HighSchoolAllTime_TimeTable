@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TimeTableActivity">
+    tools:context=".AddTimeTableActivity">
 
     <TableLayout
         android:id="@+id/Time_Table"
@@ -511,25 +511,7 @@
             android:layout_height="match_parent"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:text="추가" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
-        <Spinner
-            android:id="@+id/sp_day"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:entries="@array/day"/>
-        <Spinner
-            android:id="@+id/sp_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="25dp"
-            android:entries="@array/time"/>
+            android:text="+" />
     </LinearLayout>
 
     <LinearLayout
