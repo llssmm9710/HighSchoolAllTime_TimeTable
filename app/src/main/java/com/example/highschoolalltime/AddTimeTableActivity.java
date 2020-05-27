@@ -43,14 +43,14 @@ public class AddTimeTableActivity extends AppCompatActivity {
     String sub, text, sub_text, myJSON, userId = "Id";//TextView ID값과 입력한 데이터를 갖을 임시 변수
     TextView tv_result;//Edit Text로 입력 받은 데이터를 삽입할 TextView
 
-    private static String TAG = "AddTimeTableActivity";
-    private static final String TAG_RESPONSE = "response";
-    private static final String TAG_SUBJECT = "Subject";
-    private static final String TAG_POSITION = "Position";
+    private static String TAG = "AddTimeTableActivity";//JAVA 파일 명
+    private static final String TAG_RESPONSE = "response";//DB 스키마
+    private static final String TAG_SUBJECT = "Subject";//DB 스키마
+    private static final String TAG_POSITION = "Position";//DB 스키마
 
-    JSONArray peoples = null;
-    ArrayList<HashMap<String, String>> personList;
-    List<String> data = new ArrayList<>();
+    JSONArray peoples = null;//응담으로 인한 데이터 저장 배열
+    ArrayList<HashMap<String, String>> personList;//HashMap 배열
+    List<String> data = new ArrayList<>();//데이터 저장 리스트
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -499,6 +499,7 @@ public class AddTimeTableActivity extends AppCompatActivity {
                             tv_result = findViewById(R.id.tv_result_f7);
                             break;
                     }
+
                 //DB요청
                 Response.Listener<String> reponseListener = new Response.Listener<String>() {
                     @Override
@@ -523,7 +524,7 @@ public class AddTimeTableActivity extends AppCompatActivity {
 
                 dialog.dismiss();
             }
-
+                //DB수정
                 private void Re_Time() {
                     Response.Listener<String> reponseListener = new Response.Listener<String>() {
                         @Override
@@ -546,7 +547,7 @@ public class AddTimeTableActivity extends AppCompatActivity {
                     RequestQueue queue = Volley.newRequestQueue(AddTimeTableActivity.this);
                     queue.add(update_time);
                 }
-
+                //DB추가
                 private void Add_Time() {
                     Response.Listener<String> reponseListener = new Response.Listener<String>() {
                         @Override
