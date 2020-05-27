@@ -1,3 +1,5 @@
+<!--Spiner 배열 값-->
+
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="day">//Spiner 내 List 값이며 요일 배열

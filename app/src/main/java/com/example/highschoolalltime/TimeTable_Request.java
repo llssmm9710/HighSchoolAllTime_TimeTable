@@ -1,3 +1,5 @@
+//시간표 DB 데이터 호출
+
 package com.example.highschoolalltime;
 
 import com.android.volley.AuthFailureError;

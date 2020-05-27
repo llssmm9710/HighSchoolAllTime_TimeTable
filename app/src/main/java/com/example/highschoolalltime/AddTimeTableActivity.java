@@ -1,3 +1,5 @@
+//시간표 Activity
+
 package com.example.highschoolalltime;
 
 import androidx.appcompat.app.AppCompatActivity;

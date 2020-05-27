@@ -1,3 +1,5 @@
+//시간표 삭제
+
 package com.example.highschoolalltime;
 
 import com.android.volley.AuthFailureError;
