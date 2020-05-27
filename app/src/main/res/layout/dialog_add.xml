@@ -32,7 +32,7 @@
         android:ems="10"
         android:layout_marginBottom="10dp"
         android:inputType="textEmailAddress"
-        android:hint="과목명을 입력하세요"
+        android:hint="과목명 입력"
         android:layout_below="@+id/textviewSubject">//과목 명을 입력받을 EditText
 
         <requestFocus />
