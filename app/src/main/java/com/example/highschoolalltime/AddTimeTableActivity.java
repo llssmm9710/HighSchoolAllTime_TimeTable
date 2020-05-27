@@ -75,7 +75,7 @@ public class AddTimeTableActivity extends AppCompatActivity {
             public void onClick(View v) {
                 AlertDialog.Builder ad = new AlertDialog.Builder(AddTimeTableActivity.this);//데이터를 입력받을 화면 다이얼로그로 띄우기 위한 Builder
                 LayoutInflater inflater = getLayoutInflater();//다이얼로그 내 띄울 Layout 불러오기
-                View view = inflater.inflate(R.layout., null);
+                View view = inflater.inflate(R.layout.dialog_delete, null);
                 ad.setView(view);//불러온 Layout을 다이얼로그에 띄우기
                 final Button submit = (Button) view.findViewById(R.id.del_buttonSubmit);//다이얼로그 내 버튼 ID정의(Posivive<확인> 버튼)
                 final Button done = (Button) view.findViewById(R.id.del_buttonDone);//다이얼로그 내 버튼 ID정의(Negative<취소> 버튼)
@@ -118,7 +118,7 @@ public class AddTimeTableActivity extends AppCompatActivity {
         });
         getData("http://highschool.dothome.co.kr/getTimeTable.php");
     }
-
+    //DB 요청해 삭제
     void delDB(String sub, String userId){
         Response.Listener<String> reponseListener = new Response.Listener<String>() {
             @Override
@@ -137,7 +137,7 @@ public class AddTimeTableActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-        };
+        };//DB 삭제
         Delete_Time delete_time = new Delete_Time(sub, userId, reponseListener);
         RequestQueue queue = Volley.newRequestQueue(AddTimeTableActivity.this);
         queue.add(delete_time);
